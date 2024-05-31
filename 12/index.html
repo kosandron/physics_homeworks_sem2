@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .graph1 {
+         padding: 20px;
+         float: left;
+         width: 500px;
+        }
+        .clear {
+         clear: left;
+        }
+        .graph2 {
+         padding: 20px;
+         float: left;
+         width: 1000px;
+        }
+       </style>
+</head>
+<body>
+    <div>
+        <label for="wl">Длина волны, нм: </label>
+        <input type="number" id="wl" class="wl" value="700">
+    </div>
+    <div>
+        <label for="N">Количество щелей: </label>
+        <input type="number" id="N" class="N" value="2" step="1">
+    </div>
+    <div>
+        <label for="a">Расстояние между щелями, м: </label>
+        <input type="number" id="a" class="a" value="0.0001">
+    </div>
+    </div>
+        <label for="b">Ширина щели, м: </label>
+        <input type="number" id="b" class="b" value="0.0001">
+    </div>
+    <div>
+        <label for="L">Расстояние до экрана, м: </label>
+        <input type="number" id="L" class="L" value="3">
+    </div>
+    <div>
+        <label for="scw">Ширина наблюдаемой части экрана, м: </label>
+        <input type="number" id="scw" class="scw" value="5">
+    </div>
+    <div>
+        <button>Ввести</button>
+    </div>
+    
+    <div class="graph1" id="chartContainer">
+        <canvas id="myChart" width="600" height="600">   </canvas>
+    </div>
+
+    <div class="graph2">
+        <canvas id="canvas" style="width: 500px; height: 300px;"></canvas>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

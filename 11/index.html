@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+		body, html {
+            height: 100%;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+			width: 100%;
+        }
+        .canvas-container {
+			flex: 1;
+            margin: 10px;
+            border: 1px solid #000;
+        }
+        canvas {
+            display: block;
+        }
+		
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="canvas-container">
+            <canvas id="myChart" width="600" height="400"></canvas>
+        </div>
+        <div class="canvas-container">
+            <canvas id="canvas" width="600" height="600"></canvas>
+        </div>
+    </div>
+
+
+    <div>
+        <label for="wl">Середина спектра, нм: </label>
+        <input type="number" id="wl" class="wl" value="500">
+    </div>
+    <div>
+        <label for="ws">Ширина спектра, нм: </label>
+        <input type="number" id="ws" class="ws" value="0">
+    </div>
+    <div>
+        <label for="nl">Показатель преломления линзы: </label>
+        <input type="number" id="nl" class="nl" value="2">
+    </div>
+    <div>
+        <label for="np">Показатель преломления пластины: </label>
+        <input type="number" id="np" class="np" value="3">
+    </div>
+    <div>
+        <label for="nm">Показатель преломления средвы между ними: </label>
+        <input type="number" id="nm" class="nm" value="1">
+    </div>
+    <div>
+        <label for="R">Радиус линзы, м: </label>
+        <input type="number" id="R" class="R" value="1">
+    </div>
+    <div>
+        <label for="msh">Масштаб: </label>
+        <input type="number" id="msh" class="msh" value="0.002">
+    </div>
+    <div>
+        <button>Ввести</button>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

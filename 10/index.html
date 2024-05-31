@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .graph1 {
+         padding: 20px;
+         float: left;
+         width: 600px;
+        }
+        .clear {
+         clear: left;
+        }
+        .graph2 {
+         padding: 20px;
+         float: left;
+         width: 1000px;
+        }
+       </style>
+</head>
+<body>
+    <div>
+        <label for="wl">Длина волны, нм: </label>
+        <input type="number" id="wl" class="wl" value="700">
+    </div>
+    <div>
+        <label for="n1">Показатель преломления первой среды: </label>
+        <input type="number" id="n1" class="n1" value="1">
+    </div>
+    <div>
+        <label for="n2">Показатель преломления второй среды: </label>
+        <input type="number" id="n2" class="n2" value="1">
+    </div>
+    <div>
+        <label for="d">Расстояние между щелями, м: </label>
+        <input type="number" id="d" class="d" value="1">
+    </div>
+    <div>
+        <label for="L">Расстояние до экрана, м: </label>
+        <input type="number" id="L" class="L" value="100">
+    </div>
+    <div>
+        <button>Ввести</button>
+    </div>
+    
+    <div class="graph1" id="chartContainer">
+        <canvas id="myChart" width="600" height="600">   </canvas>
+    </div>
+
+    <div class="graph2">
+        <h2>Интерференционные полосы</h2>
+        <canvas id="canvas" style="width: 1000px; height: 300px;"></canvas>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

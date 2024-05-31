@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .graph1 {
+         padding: 20px;
+         float: left;
+         width: 600px;
+        }
+        .clear {
+         clear: left;
+        }
+       </style>
+</head>
+<body>
+    <div>
+        <label for="nA">Амплитуда несущего колебания, В: </label>
+        <input type="number" id="nA" class="nA" value="1">
+    </div>
+    <div>
+        <label for="iA">Амплитуда информационного сигнала, В: </label>
+        <input type="number" id="iA" class="iA" value="1">
+    </div>
+    <div>
+        <label for="wn">Частота несущего колебания, Гц: </label>
+        <input type="number" id="wn" class="wn" value="40">
+    </div>
+    <div>
+        <label for="wi">Частота информационного сигнала, Гц: </label>
+        <input type="number" id="wi" class="wi" value="2">
+    </div>
+    <div>
+        <label for="k">Коэффициент модуляции: </label>
+        <input type="number" id="k" class="k" value="0.7">
+    </div>
+    <div>
+        <button>Ввести</button>
+    </div>
+    
+
+    <div class="graph1" id="chartContainer">
+        <canvas id="myChart" width="600" height="600">   </canvas>
+    </div>
+    <div class="graph1" id="chartContainer">
+        <canvas id="myChart1" width="600" height="600">   </canvas>
+    </div>
+    <div class="graph1" id="chartContainer">
+        <canvas id="myChart2" width="600" height="600">   </canvas>
+    </div>
+    <div class="graph1" id="chartContainer">
+        <canvas id="myChart3" width="600" height="600">   </canvas>
+    </div>
+    <div class="graph1" id="chartContainer">
+        <canvas id="myChart4" width="600" height="600">   </canvas>
+    </div>
+    <div class="graph1" id="chartContainer">
+        <canvas id="myChart5" width="600" height="600">   </canvas>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
